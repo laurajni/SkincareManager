@@ -1,0 +1,39 @@
+{
+  "amRoutine": [
+    {
+      "name": "Test1",
+      "am": true,
+      "pm": false,
+      "used": false
+    },
+    {
+      "typeOfActive": "MISC",
+      "name": "Hydrating Toner",
+      "am": true,
+      "pm": true,
+      "used": false
+    },
+    {
+      "typeOfMoisturizer": "SUNSCREEN",
+      "name": "Demo 2",
+      "am": true,
+      "pm": true,
+      "used": false
+    }
+  ],
+  "pmRoutine": [
+    {
+      "name": "Low PH Cleanser",
+      "am": false,
+      "pm": true,
+      "used": false
+    },
+    {
+      "typeOfMoisturizer": "SUNSCREEN",
+      "name": "Demo 2",
+      "am": true,
+      "pm": true,
+      "used": false
+    }
+  ]
+}

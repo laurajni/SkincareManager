@@ -1,0 +1,61 @@
+{
+  "actives": {
+    "Vitamin C": {
+      "typeOfActive": "VITAMIN",
+      "name": "Vitamin C",
+      "am": true,
+      "pm": true,
+      "used": false
+    },
+    "Demo": {
+      "typeOfActive": "ACID",
+      "name": "Demo",
+      "am": false,
+      "pm": true,
+      "used": false
+    }
+  },
+  "cleansers": {
+    "Oil Cleanser": {
+      "name": "Oil Cleanser",
+      "am": false,
+      "pm": false,
+      "used": false
+    },
+    "Test1": {
+      "name": "Test1",
+      "am": true,
+      "pm": false,
+      "used": false
+    },
+    "Water": {
+      "name": "Water",
+      "am": true,
+      "pm": true,
+      "used": false
+    }
+  },
+  "moisturizers": {
+    "Biore UV": {
+      "typeOfMoisturizer": "SUNSCREEN",
+      "name": "Biore UV",
+      "am": true,
+      "pm": false,
+      "used": false
+    },
+    "Test1": {
+      "typeOfMoisturizer": "CREAM",
+      "name": "Test1",
+      "am": false,
+      "pm": false,
+      "used": false
+    },
+    "Demo 2": {
+      "typeOfMoisturizer": "SUNSCREEN",
+      "name": "Demo 2",
+      "am": true,
+      "pm": true,
+      "used": false
+    }
+  }
+}
