@@ -12,7 +12,7 @@ import static model.product.active.ActiveType.ACID;
 import static model.product.active.ActiveType.VITAMIN;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class TestProductShelf {
+class TestProductShelf {
     private ProductShelf ps;
     private Active active;
     private Active active2;

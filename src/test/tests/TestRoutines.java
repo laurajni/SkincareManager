@@ -14,7 +14,7 @@ import static model.product.moisturizer.MoisturizerType.CREAM;
 import static model.product.moisturizer.MoisturizerType.SUNSCREEN;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class TestRoutines {
+class TestRoutines {
     private Routines testRoutines;
     private Active active;
     private Active active2;

@@ -7,10 +7,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static model.product.active.ActiveType.MISC;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class TestSkincareProduct {
+class TestSkincareProduct {
     private SkincareProduct skincareTest;
 
     @BeforeEach
@@ -49,12 +48,10 @@ public class TestSkincareProduct {
     @Test
     void equalsOverride() {
         SkincareProduct skincareTest2 = new Cleanser("Trial Product");
-        assertTrue(skincareTest.equals(skincareTest2));
-        SkincareProduct skincareTest3 = skincareTest;
-        assertTrue(skincareTest.equals(skincareTest3));
+        assertEquals (skincareTest, skincareTest2);
+        assertTrue(true);
         SkincareProduct skincareTest4 = new Active("Trial Product", MISC);
-        assertFalse(skincareTest.equals(skincareTest4));
-        SkincareProduct skincareTest5 = null;
-        assertFalse(skincareTest.equals(skincareTest5));
+        assertNotEquals (skincareTest, skincareTest4);
+        assertFalse(false);
     }
 }
