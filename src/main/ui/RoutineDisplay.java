@@ -17,6 +17,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 import static ui.SkincareRoutine.*;
 
@@ -82,66 +83,56 @@ public class RoutineDisplay {
 
     private TableModel amTableModel(ArrayList<SkincareProduct> am) {
         DefaultTableModel model = new DefaultTableModel(new Object[] {"Product", "Name", "Used"}, 0);
-        int counter = 0;
-        for (SkincareProduct sp : am) {
-            checkAMInShelf(sp, counter);
-            counter++;
+        for (Iterator<SkincareProduct> iterator = am.iterator(); iterator.hasNext();) {
+            SkincareProduct sp = iterator.next();
+            if(checkAMInShelf(sp).equals("false")) {
+                iterator.remove();
+            }
         }
         routines.sortAM();
-        counter = 0;
         for (SkincareProduct sp : am) {
-            String type = checkAMInShelf(sp, counter);
+            String type = checkAMInShelf(sp);
             model.addRow(new Object[] {type, sp.getName(), sp.getUsed()});
-            counter++;
         }
         return model;
     }
 
     private TableModel pmTableModel(ArrayList<SkincareProduct> pm) {
         DefaultTableModel model = new DefaultTableModel(new Object[] {"Product Name", "Type", "Used"}, 0);
-        int counter = 0;
-        for (SkincareProduct sp : pm) {
-            checkPMInShelf(sp, counter);
-            counter++;
+        for (Iterator<SkincareProduct> iterator = pm.iterator(); iterator.hasNext();) {
+            SkincareProduct sp = iterator.next();
+            if(checkAMInShelf(sp).equals("false")) {
+                iterator.remove();
+            }
         }
         routines.sortPM();
-        counter = 0;
         for (SkincareProduct sp : pm) {
-            String type = checkPMInShelf(sp, counter);
+            String type = checkPMInShelf(sp);
             model.addRow(new Object[] {type, sp.getName(), sp.getUsed()});
-            counter++;
         }
         return model;
     }
 
-    private String checkAMInShelf(SkincareProduct sp, int index) {
+    private String checkAMInShelf(SkincareProduct sp) {
         if (shelf.containsActive((sp.getName()))) {
-            routines.getAM().set(index, shelf.getActive(sp.getName()));
             return "Active";
         } else if (shelf.containsCleanser((sp.getName()))) {
-            routines.getAM().set(index, shelf.getCleanser(sp.getName()));
             return "Cleanser";
         } else if (shelf.containsMoisturizer((sp.getName()))) {
-            routines.getAM().set(index, shelf.getMoisturizer(sp.getName()));
             return "Moisturizer";
         } else {
-            routines.removeFromAM(index);
             return "false";
         }
     }
 
-    private String checkPMInShelf(SkincareProduct sp, int index) {
+    private String checkPMInShelf(SkincareProduct sp) {
         if (shelf.containsActive((sp.getName()))) {
-            routines.getPM().set(index, shelf.getActive(sp.getName()));
             return "Active";
         } else if (shelf.containsCleanser((sp.getName()))) {
-            routines.getPM().set(index, shelf.getCleanser(sp.getName()));
             return "Cleanser";
         } else if (shelf.containsMoisturizer((sp.getName()))) {
-            routines.getPM().set(index, shelf.getMoisturizer(sp.getName()));
             return "Moisturizer";
         } else {
-            routines.removeFromPM(index);
             return "false";
         }
     }

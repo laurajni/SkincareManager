@@ -1,37 +1,44 @@
 {
   "actives": {
-    "Vitamin C": {
-      "typeOfActive": "VITAMIN",
-      "name": "Vitamin C",
-      "am": true,
+    "The Ordinary Glycolic Acid": {
+      "typeOfActive": "ACID",
+      "name": "The Ordinary Glycolic Acid",
+      "am": false,
       "pm": true,
       "used": false
     },
-    "Demo": {
+    "Melano CC Vitamin C": {
+      "typeOfActive": "VITAMIN",
+      "name": "Melano CC Vitamin C",
+      "am": true,
+      "pm": false,
+      "used": false
+    },
+    "Pixi Glow Tonic": {
       "typeOfActive": "ACID",
-      "name": "Demo",
+      "name": "Pixi Glow Tonic",
       "am": false,
-      "pm": true,
+      "pm": false,
       "used": false
     }
   },
   "cleansers": {
-    "Oil Cleanser": {
-      "name": "Oil Cleanser",
+    "Innisfree Blueberry Balancing Cleanser": {
+      "name": "Innisfree Blueberry Balancing Cleanser",
       "am": false,
       "pm": false,
       "used": false
     },
-    "Test1": {
-      "name": "Test1",
-      "am": true,
-      "pm": false,
+    "CosRX Low pH Cleanser": {
+      "name": "CosRX Low pH Cleanser",
+      "am": false,
+      "pm": true,
       "used": false
     },
-    "Water": {
-      "name": "Water",
-      "am": true,
-      "pm": true,
+    "Neutrogena Cleanser": {
+      "name": "Neutrogena Cleanser",
+      "am": false,
+      "pm": false,
       "used": false
     }
   },
@@ -43,18 +50,46 @@
       "pm": false,
       "used": false
     },
-    "Test1": {
-      "typeOfMoisturizer": "CREAM",
-      "name": "Test1",
+    "Canmake Mermaid Milk": {
+      "typeOfMoisturizer": "SUNSCREEN",
+      "name": "Canmake Mermaid Milk",
       "am": false,
       "pm": false,
       "used": false
     },
-    "Demo 2": {
-      "typeOfMoisturizer": "SUNSCREEN",
-      "name": "Demo 2",
+    "Neutrogena Hydrogel (Dry Skin)": {
+      "typeOfMoisturizer": "CREAM",
+      "name": "Neutrogena Hydrogel (Dry Skin)",
+      "am": true,
+      "pm": false,
+      "used": false
+    },
+    "Neutrogena Hydrogel (Regular)": {
+      "typeOfMoisturizer": "CREAM",
+      "name": "Neutrogena Hydrogel (Regular)",
+      "am": false,
+      "pm": false,
+      "used": false
+    },
+    "Clinique Moisture Surge": {
+      "typeOfMoisturizer": "CREAM",
+      "name": "Clinique Moisture Surge",
+      "am": false,
+      "pm": true,
+      "used": false
+    },
+    "Benton Snail Bee Essence": {
+      "typeOfMoisturizer": "MISC",
+      "name": "Benton Snail Bee Essence",
       "am": true,
       "pm": true,
+      "used": false
+    },
+    "Rohto Moisture Milk": {
+      "typeOfMoisturizer": "SUNSCREEN",
+      "name": "Rohto Moisture Milk",
+      "am": false,
+      "pm": false,
       "used": false
     }
   }

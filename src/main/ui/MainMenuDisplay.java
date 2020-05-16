@@ -5,6 +5,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.BufferedReader;
@@ -61,10 +62,12 @@ public class MainMenuDisplay {
         public void actionPerformed(ActionEvent e) {
             mainFrame.setVisible(false);
             shelfFrame = new JFrame();
+            shelfFrame.setSize(1200,800);
+            Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+            shelfFrame.setLocationRelativeTo(null);
             shelfFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             ShelfDisplay shelfDisplay = new ShelfDisplay();
             shelfFrame.add(shelfDisplay.shelfDisplayPanel);
-            shelfFrame.setSize(600,400);
             shelfFrame.setVisible(true);
         }
     }
@@ -74,10 +77,12 @@ public class MainMenuDisplay {
         public void actionPerformed(ActionEvent e) {
             mainFrame.setVisible(false);
             routineFrame = new JFrame();
+            routineFrame.setSize(1200,800);
+            Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+            routineFrame.setLocationRelativeTo(null);
             routineFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             RoutineDisplay routineDisplay = new RoutineDisplay();
             routineFrame.add(routineDisplay.routineDisplayPanel);
-            routineFrame.setSize(600,400);
             routineFrame.setVisible(true);
         }
     }

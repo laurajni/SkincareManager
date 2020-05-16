@@ -2,6 +2,7 @@ package ui;
 
 
 import javax.swing.*;
+import java.awt.*;
 
 
 public class SkincareRoutine {
@@ -29,10 +30,12 @@ public class SkincareRoutine {
         }
 
         mainFrame = new JFrame();
+        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        mainFrame.setSize(1200,800);
+        mainFrame.setLocationRelativeTo(null);
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         MainMenuDisplay mainMenuDisplay = new MainMenuDisplay();
         mainFrame.add(mainMenuDisplay.mainMenuPanel);
-        mainFrame.setSize(600,400);
         mainFrame.setVisible(true);
 
     }

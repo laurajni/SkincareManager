@@ -7,17 +7,43 @@
       "used": false
     },
     {
-      "typeOfActive": "MISC",
       "name": "Hydrating Toner",
       "am": true,
       "pm": true,
       "used": false
     },
     {
-      "typeOfMoisturizer": "SUNSCREEN",
       "name": "Demo 2",
       "am": true,
       "pm": true,
+      "used": false
+    },
+    {
+      "typeOfMoisturizer": "CREAM",
+      "name": "Neutrogena Hydrogel (Dry Skin)",
+      "am": true,
+      "pm": false,
+      "used": false
+    },
+    {
+      "typeOfMoisturizer": "MISC",
+      "name": "Benton Snail Bee Essence",
+      "am": true,
+      "pm": true,
+      "used": false
+    },
+    {
+      "typeOfMoisturizer": "SUNSCREEN",
+      "name": "Biore UV",
+      "am": true,
+      "pm": false,
+      "used": false
+    },
+    {
+      "typeOfActive": "VITAMIN",
+      "name": "Melano CC Vitamin C",
+      "am": true,
+      "pm": false,
       "used": false
     }
   ],
@@ -29,9 +55,35 @@
       "used": false
     },
     {
-      "typeOfMoisturizer": "SUNSCREEN",
       "name": "Demo 2",
       "am": true,
+      "pm": true,
+      "used": false
+    },
+    {
+      "typeOfMoisturizer": "CREAM",
+      "name": "Clinique Moisture Surge",
+      "am": false,
+      "pm": true,
+      "used": false
+    },
+    {
+      "typeOfMoisturizer": "MISC",
+      "name": "Benton Snail Bee Essence",
+      "am": true,
+      "pm": true,
+      "used": false
+    },
+    {
+      "name": "CosRX Low pH Cleanser",
+      "am": false,
+      "pm": true,
+      "used": false
+    },
+    {
+      "typeOfActive": "ACID",
+      "name": "The Ordinary Glycolic Acid",
+      "am": false,
       "pm": true,
       "used": false
     }
